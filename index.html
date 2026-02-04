@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Timeline 🤍</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(180deg, #fff0f6, #eef3ff);
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff5c8a;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #ffd6e8;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.event {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.event.left {
+  left: 0;
+}
+
+.event.right {
+  left: 50%;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 18px;
+  color: #ff5c8a;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.event::before {
+  content: '❤';
+  position: absolute;
+  font-size: 18px;
+  top: 30px;
+  right: -10px;
+  color: #ff5c8a;
+}
+
+.event.right::before {
+  left: -10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Our Story So Far 🤍</h1>
+
+<div class="timeline">
+
+  <div class="event left">
+    <div class="card">
+      <div class="date">Day 1</div>
+      <div class="title">The Beginning</div>
+      <div class="text">
+        I didn’t know it then, but this was the start of something important.
+      </div>
+    </div>
+  </div>
+
+  <div class="event right">
+    <div class="card">
+      <div class="date">A Little Later</div>
+      <div class="title">Getting Closer</div>
+      <div class="text">
+        Talking to you slowly became my favorite part of the day.
+      </div>
+    </div>
+  </div>
+
+  <div class="event left">
+    <div class="card">
+      <div class="date">That Moment</div>
+      <div class="title">I Realized</div>
+      <div class="text">
+        Somewhere between the laughs and silence, I started caring deeply.
+      </div>
+    </div>
+  </div>
+
+  <div class="event right">
+    <div class="card">
+      <div class="date">Today</div>
+      <div class="title">Still Us</div>
+      <div class="text">
+        And this timeline doesn’t end here. It keeps going.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
